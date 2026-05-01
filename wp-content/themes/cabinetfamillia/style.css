@@ -2,7 +2,7 @@
 Theme Name: cabinetfamillia
 Description: Custom theme for cabinetfamillia association, extending Twenty Twenty-Four theme
 Author: cabinetfamillia Association
-Version: 1.0.1
+Version: 1.0.2
 Template: twentytwentyfour
 License: GPL v2 or later
 Text Domain: cabinetfamillia
@@ -98,6 +98,50 @@ body{
 	 grid-column:full;
  }
  
+ 
+ figure{
+	 border-radius: 16px;
+	 overflow: hidden;
+ }
+ .blob{
+	 position: relative;
+ }
+ .blob:after{
+	 content: "";
+	 display: block;
+	 /* background-image: url("./assets/purple_0.svg");
+	 background-position: 100% 0; */
+	 background-repeat: no-repeat;
+	 position: absolute;
+	 top: 0;
+	 right: 0;
+	 width: 100%;
+	 height:100%;
+ }
+ .blob.purple:after{
+	 background-image: url("./assets/purple_0.svg");
+     background-position: 100% 0;
+ }
+.blob.purple1:after{
+	  background-image: url("./assets/purple_1.svg");
+	  background-position: 0 100%;
+}
+.blob.purple2:after{
+	background-image: url("./assets/purple_2.svg");
+	background-position: 100% 0;
+}
+.blob.orange:after{
+	background-image: url("./assets/orange_0.svg");
+	background-position: 0 100%;
+}
+.blob.orange1:after{
+	background-image: url("./assets/orange_1.svg");
+	background-position: 100% 0;
+}
+.blob.green:after{
+	background-image: url("./assets/green.svg");
+	background-position: 0 100%;
+}
  
  /* equipe */
  .wp-site-blocks>.famillia_equipe{
